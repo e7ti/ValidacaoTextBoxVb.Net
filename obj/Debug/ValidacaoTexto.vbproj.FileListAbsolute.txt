@@ -1,0 +1,13 @@
+C:\Desenv\dotnet\ValidacaoTexto\obj\Debug\ValidacaoTexto.vbproj.AssemblyReference.cache
+C:\Desenv\dotnet\ValidacaoTexto\obj\Debug\ValidacaoTexto.vbproj.SuggestedBindingRedirects.cache
+C:\Desenv\dotnet\ValidacaoTexto\obj\Debug\ValidacaoTexto.Resources.resources
+C:\Desenv\dotnet\ValidacaoTexto\obj\Debug\ValidacaoTexto.vbproj.GenerateResource.cache
+C:\Desenv\dotnet\ValidacaoTexto\obj\Debug\ValidacaoTexto.vbproj.CoreCompileInputs.cache
+C:\Desenv\dotnet\ValidacaoTexto\bin\Debug\ValidacaoTexto.exe.config
+C:\Desenv\dotnet\ValidacaoTexto\bin\Debug\ValidacaoTexto.exe
+C:\Desenv\dotnet\ValidacaoTexto\bin\Debug\ValidacaoTexto.pdb
+C:\Desenv\dotnet\ValidacaoTexto\bin\Debug\ValidacaoTexto.xml
+C:\Desenv\dotnet\ValidacaoTexto\obj\Debug\ValidacaoTexto.exe
+C:\Desenv\dotnet\ValidacaoTexto\obj\Debug\ValidacaoTexto.xml
+C:\Desenv\dotnet\ValidacaoTexto\obj\Debug\ValidacaoTexto.pdb
+C:\Desenv\dotnet\ValidacaoTexto\obj\Debug\ValidacaoTexto.Form1.resources
