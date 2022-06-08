@@ -13,3 +13,4 @@ Classe VB.NET
 - Estas são as formas permitidas nesta classe que gera um componente TextBox
 PS: Para uso adequado, é preciso compilar a classe e adicionar ao seu projeto .net windows forms
 É possivel tambem atribuir cor de fundo quando o textbox entrar em focu.
+Tem o recurso placeholder, que coloca uma mensagem no textbox quando ele está vazio
