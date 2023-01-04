@@ -1,0 +1,12 @@
+C:\Desenv\dotnet\ValidacaoTexto vb.net\bin\Release\ValidacaoTexto.dll.config
+C:\Desenv\dotnet\ValidacaoTexto vb.net\bin\Release\ValidacaoTexto.dll
+C:\Desenv\dotnet\ValidacaoTexto vb.net\bin\Release\ValidacaoTexto.pdb
+C:\Desenv\dotnet\ValidacaoTexto vb.net\bin\Release\ValidacaoTexto.xml
+C:\Desenv\dotnet\ValidacaoTexto vb.net\obj\Release\ValidacaoTexto.vbproj.AssemblyReference.cache
+C:\Desenv\dotnet\ValidacaoTexto vb.net\obj\Release\ValidacaoTexto.Form1.resources
+C:\Desenv\dotnet\ValidacaoTexto vb.net\obj\Release\ValidacaoTexto.Resources.resources
+C:\Desenv\dotnet\ValidacaoTexto vb.net\obj\Release\ValidacaoTexto.vbproj.GenerateResource.cache
+C:\Desenv\dotnet\ValidacaoTexto vb.net\obj\Release\ValidacaoTexto.vbproj.CoreCompileInputs.cache
+C:\Desenv\dotnet\ValidacaoTexto vb.net\obj\Release\ValidacaoTexto.dll
+C:\Desenv\dotnet\ValidacaoTexto vb.net\obj\Release\ValidacaoTexto.xml
+C:\Desenv\dotnet\ValidacaoTexto vb.net\obj\Release\ValidacaoTexto.pdb

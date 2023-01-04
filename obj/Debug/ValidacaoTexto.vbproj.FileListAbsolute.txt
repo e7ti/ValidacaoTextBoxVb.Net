@@ -11,3 +11,15 @@ C:\Desenv\dotnet\ValidacaoTexto\obj\Debug\ValidacaoTexto.exe
 C:\Desenv\dotnet\ValidacaoTexto\obj\Debug\ValidacaoTexto.xml
 C:\Desenv\dotnet\ValidacaoTexto\obj\Debug\ValidacaoTexto.pdb
 C:\Desenv\dotnet\ValidacaoTexto\obj\Debug\ValidacaoTexto.Form1.resources
+C:\Desenv\dotnet\ValidacaoTexto vb.net\bin\Debug\ValidacaoTexto.pdb
+C:\Desenv\dotnet\ValidacaoTexto vb.net\bin\Debug\ValidacaoTexto.xml
+C:\Desenv\dotnet\ValidacaoTexto vb.net\obj\Debug\ValidacaoTexto.vbproj.AssemblyReference.cache
+C:\Desenv\dotnet\ValidacaoTexto vb.net\obj\Debug\ValidacaoTexto.Form1.resources
+C:\Desenv\dotnet\ValidacaoTexto vb.net\obj\Debug\ValidacaoTexto.Resources.resources
+C:\Desenv\dotnet\ValidacaoTexto vb.net\obj\Debug\ValidacaoTexto.vbproj.GenerateResource.cache
+C:\Desenv\dotnet\ValidacaoTexto vb.net\obj\Debug\ValidacaoTexto.vbproj.CoreCompileInputs.cache
+C:\Desenv\dotnet\ValidacaoTexto vb.net\obj\Debug\ValidacaoTexto.xml
+C:\Desenv\dotnet\ValidacaoTexto vb.net\obj\Debug\ValidacaoTexto.pdb
+C:\Desenv\dotnet\ValidacaoTexto vb.net\bin\Debug\ValidacaoTexto.dll.config
+C:\Desenv\dotnet\ValidacaoTexto vb.net\bin\Debug\ValidacaoTexto.dll
+C:\Desenv\dotnet\ValidacaoTexto vb.net\obj\Debug\ValidacaoTexto.dll

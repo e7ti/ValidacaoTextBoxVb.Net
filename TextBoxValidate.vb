@@ -51,6 +51,7 @@ Public Class TextBoxValidate
     Protected Overrides Sub OnGotFocus(e As System.EventArgs)
         MyBase.OnGotFocus(e)
         MyBase.BackColor = _gotFocusColor
+        MyBase.SelectAll()
     End Sub
 
     Protected Overrides Sub OnLostFocus(e As System.EventArgs)
@@ -136,7 +137,7 @@ Public Class TextBoxValidate
         End Function
 
         Public Overrides Function GetStandardValues(context As ITypeDescriptorContext) As TypeConverter.StandardValuesCollection
-            Return New StandardValuesCollection(New String() {"Default", "CPF", "CNPJ", "PIS", "Data",
+            Return New StandardValuesCollection(New String() {"Default", "CPF", "CNPJ", "PIS", "Data", "Hora",
                                                               "E-Mail", "Telefone", "Celular", "CEP", "Moeda", "Numeros", "Letras"}) 'Aqui definimos as validações diversas (Deixei o CNH fora)
         End Function
     End Class
@@ -159,11 +160,12 @@ Public Class TextBoxValidate
             Me.m_TipoValidacao = "CNPJ" Or
             Me.m_TipoValidacao = "PIS" Or
             Me.m_TipoValidacao = "Data" Or
+            Me.m_TipoValidacao = "Hora" Or
             Me.m_TipoValidacao = "Telefone" Or
             Me.m_TipoValidacao = "Celular" Or
             Me.m_TipoValidacao = "CEP" Then
-            Caracter.text = Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(Caracter.text,
-                        "/", ""), ".", ""), "-", ""), "(", ""), ")", ""), " ", ""), "R", ""), "$", "")
+            Caracter.text = Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(Caracter.text,
+                        "/", ""), ".", ""), "-", ""), "(", ""), ")", ""), " ", ""), "R", ""), "$", ""), ":", "")
         End If
 
     End Sub
@@ -173,11 +175,12 @@ Public Class TextBoxValidate
             Me.m_TipoValidacao = "CNPJ" Or
             Me.m_TipoValidacao = "PIS" Or
             Me.m_TipoValidacao = "Data" Or
+            Me.m_TipoValidacao = "Hora" Or
             Me.m_TipoValidacao = "Telefone" Or
             Me.m_TipoValidacao = "Celular" Or
             Me.m_TipoValidacao = "CEP" Then
-            Caracter = Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(Caracter,
-                        "/", ""), ".", ""), "-", ""), "(", ""), ")", ""), " ", ""), "R", ""), "$", "")
+            Caracter = Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(Replace(Caracter,
+                        "/", ""), ".", ""), "-", ""), "(", ""), ")", ""), " ", ""), "R", ""), "$", ""), ":", "")
         End If
         Return Caracter
     End Function
@@ -192,7 +195,7 @@ Public Class TextBoxValidate
                         Dim Num As Double
                         Dim StrCpf As String = RemoveCaracteresString(Me.Text)
                         Num = StrCpf
-                        Me.Text = Format(Num, "###\.###\.###\-##")
+                        Me.Text = Format(Num, "0##\.###\.###\-##")
                         Exit Sub
                     Else
                         MsgBox("CPF Inválido!!!", MsgBoxStyle.Critical, "Erro de Digitação")
@@ -204,7 +207,7 @@ Public Class TextBoxValidate
                         Dim StrCnpj As String = RemoveCaracteresString(Me.Text)
                         'Num = Me.Text
                         Num = StrCnpj
-                        Me.Text = Format(Num, "##\.###\.###\/####\-##")
+                        Me.Text = Format(Num, "0#\.###\.###\/####\-##")
                         Exit Sub
                     Else
                         MsgBox("CNPJ Inválido!!!", MsgBoxStyle.Critical, "Erro de Digitação")
@@ -218,7 +221,7 @@ Public Class TextBoxValidate
                         'Num = Me.Text
                         Num = StrPis
 
-                        Me.Text = Format(Num, "###\.####\.###\-#")
+                        Me.Text = Format(Num, "0##\.####\.###\-#")
                         Exit Sub
                     Else
                         MsgBox("PIS Inválido!!!", MsgBoxStyle.Critical, "Erro de Digitação")
@@ -226,17 +229,36 @@ Public Class TextBoxValidate
                     End If
                     Exit Sub
                 Case Is = "Data"
+                    Dim Num As Double
+                    'Num = Me.Text
+                    Num = RemoveCaracteresString(Me.Text)
+                    Me.Text = Format(Num, "0#\/##\/####")
                     If IsData(Me.Text) = True Then
-                        Dim Num As Double
                         'Num = Me.Text
                         Num = RemoveCaracteresString(Me.Text)
-                        Me.Text = Format(Num, "##\/##\/####")
+                        Me.Text = Format(Num, "0#\/##\/####")
                         Exit Sub
                     Else
                         MsgBox("Data Inválida!!!", MsgBoxStyle.Critical, "Erro de Digitação")
                         Me.Focus()
                     End If
                     Exit Sub
+                Case Is = "Hora"
+                    Dim Num As Double
+                    'Num = Me.Text
+                    Num = RemoveCaracteresString(Me.Text)
+                    Me.Text = Format(Num, "0#\:##\:##")
+                    If IsHora(Me.Text) = True Then
+                        'Num = Me.Text
+                        Num = RemoveCaracteresString(Me.Text)
+                        Me.Text = Format(Num, "0#\:##\:##")
+                        Exit Sub
+                    Else
+                        MsgBox("Hora Inválida!!!", MsgBoxStyle.Critical, "Erro de Digitação")
+                        Me.Focus()
+                    End If
+                    Exit Sub
+
                 Case Is = "E-Mail"
                     If IsEmail(Me.Text) = False Then
                         MsgBox("E-mail Inválido!!!", MsgBoxStyle.Critical, "Erro de Digitação")
@@ -472,11 +494,11 @@ Public Class TextBoxValidate
     End Sub
 
     'Validação de Data
-    Private Function IsData(DataPar As Object) As Boolean
+    Private Function IsData(HoraPar As Object) As Boolean
         Try
             Dim Num As Double
-            Num = Me.Text
-            Me.Text = CDate(Format(Num, "##\/##\/####"))
+            Num = RemoveCaracteresString(Me.Text)
+            Me.Text = CDate(Format(Num, "0#\/##\/####"))
             If IsDate(Me.Text) = True Then
                 RemoveCaracteres(Me)
                 Return True
@@ -486,7 +508,26 @@ Public Class TextBoxValidate
             Return False
             Exit Function
         End Try
-        Return DataPar
+        Return HoraPar
+    End Function
+
+    'Validação de Hora
+    Private Function IsHora(DataPar As Object) As Boolean
+        Try
+            Dim Num As Double
+            Num = RemoveCaracteresString(Me.Text)
+            Me.Text = Format(Num, "0#\:##\:##")
+            If IsDate(Me.Text) = True Then
+                RemoveCaracteres(Me)
+                Return True
+            Else
+                Return False
+            End If
+        Catch ex As Exception
+            RemoveCaracteres(Me)
+            Return False
+            Exit Function
+        End Try
     End Function
 
     'Somente números
@@ -624,12 +665,20 @@ Public Class TextBoxValidate
              Me.m_TipoValidacao = "CEP" Then 'Me.m_TipoValidacao = "CNH" Or (deixei fora)
             Dim KeyAscii As Short = CShort(Asc(e.KeyChar))
             KeyAscii = CShort(SomenteNumeros(KeyAscii))
+            ''If e.KeyChar = Convert.ToChar(13) Then
+            ''    e.Handled = True
+            ''    SendKeys.Send("{TAB}")
+            ''End If
             If KeyAscii = 0 Then
                 e.Handled = True
             End If
         ElseIf Me.m_TipoValidacao = "Letras" Then
             Dim KeyAscii As Short = CShort(Asc(e.KeyChar))
             KeyAscii = CShort(SomenteLetras(KeyAscii))
+            ''If e.KeyChar = Convert.ToChar(13) Then
+            ''    e.Handled = True
+            ''    SendKeys.Send("{TAB}")
+            ''End If
             If KeyAscii = 0 Then
                 e.Handled = True
             End If

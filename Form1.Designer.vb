@@ -23,6 +23,8 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
@@ -35,7 +37,6 @@ Partial Class Form1
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.TextBoxValidate4 = New ValidacaoTexto.TextBoxValidate()
         Me.TextBoxValidate3 = New ValidacaoTexto.TextBoxValidate()
         Me.TextBoxValidate10 = New ValidacaoTexto.TextBoxValidate()
@@ -46,9 +47,14 @@ Partial Class Form1
         Me.TextBoxValidate6 = New ValidacaoTexto.TextBoxValidate()
         Me.TextBoxValidate5 = New ValidacaoTexto.TextBoxValidate()
         Me.TextBoxValidate1 = New ValidacaoTexto.TextBoxValidate()
-        Me.Label11 = New System.Windows.Forms.Label()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.TextBoxValidate11 = New ValidacaoTexto.TextBoxValidate()
+        Me.TextBoxValidate12 = New ValidacaoTexto.TextBoxValidate()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.Panel3.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
@@ -61,6 +67,27 @@ Partial Class Form1
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(800, 50)
         Me.Panel1.TabIndex = 1
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(349, 4)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(87, 24)
+        Me.Label11.TabIndex = 3
+        Me.Label11.Text = "Créditos"
+        '
+        'LinkLabel1
+        '
+        Me.LinkLabel1.AutoSize = True
+        Me.LinkLabel1.LinkVisited = True
+        Me.LinkLabel1.Location = New System.Drawing.Point(208, 28)
+        Me.LinkLabel1.Name = "LinkLabel1"
+        Me.LinkLabel1.Size = New System.Drawing.Size(319, 13)
+        Me.LinkLabel1.TabIndex = 2
+        Me.LinkLabel1.TabStop = True
+        Me.LinkLabel1.Text = "https://kallbuloso.com.br/amaralkarl/classe-de-validacao-textbox/"
         '
         'Label1
         '
@@ -106,7 +133,7 @@ Partial Class Form1
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(51, 157)
+        Me.Label5.Location = New System.Drawing.Point(51, 136)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(85, 24)
         Me.Label5.TabIndex = 0
@@ -117,7 +144,7 @@ Partial Class Form1
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(207, 157)
+        Me.Label6.Location = New System.Drawing.Point(207, 136)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(66, 24)
         Me.Label6.TabIndex = 0
@@ -128,7 +155,7 @@ Partial Class Form1
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(386, 157)
+        Me.Label7.Location = New System.Drawing.Point(386, 136)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(51, 24)
         Me.Label7.TabIndex = 0
@@ -139,7 +166,7 @@ Partial Class Form1
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(51, 252)
+        Me.Label8.Location = New System.Drawing.Point(51, 216)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(93, 24)
         Me.Label8.TabIndex = 0
@@ -150,7 +177,7 @@ Partial Class Form1
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(202, 252)
+        Me.Label9.Location = New System.Drawing.Point(202, 216)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(76, 24)
         Me.Label9.TabIndex = 0
@@ -161,7 +188,7 @@ Partial Class Form1
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(386, 252)
+        Me.Label10.Location = New System.Drawing.Point(386, 216)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(67, 24)
         Me.Label10.TabIndex = 0
@@ -188,20 +215,9 @@ Partial Class Form1
         Me.Panel2.Size = New System.Drawing.Size(800, 50)
         Me.Panel2.TabIndex = 9
         '
-        'LinkLabel1
-        '
-        Me.LinkLabel1.AutoSize = True
-        Me.LinkLabel1.LinkVisited = True
-        Me.LinkLabel1.Location = New System.Drawing.Point(208, 28)
-        Me.LinkLabel1.Name = "LinkLabel1"
-        Me.LinkLabel1.Size = New System.Drawing.Size(319, 13)
-        Me.LinkLabel1.TabIndex = 2
-        Me.LinkLabel1.TabStop = True
-        Me.LinkLabel1.Text = "https://kallbuloso.com.br/amaralkarl/classe-de-validacao-textbox/"
-        '
         'TextBoxValidate4
         '
-        Me.TextBoxValidate4.GotFocusColor = System.Drawing.Color.White
+        Me.TextBoxValidate4.GotFocusColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.TextBoxValidate4.Location = New System.Drawing.Point(570, 99)
         Me.TextBoxValidate4.LostFocusColor = System.Drawing.Color.White
         Me.TextBoxValidate4.Name = "TextBoxValidate4"
@@ -213,7 +229,7 @@ Partial Class Form1
         '
         'TextBoxValidate3
         '
-        Me.TextBoxValidate3.GotFocusColor = System.Drawing.Color.White
+        Me.TextBoxValidate3.GotFocusColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.TextBoxValidate3.Location = New System.Drawing.Point(390, 99)
         Me.TextBoxValidate3.LostFocusColor = System.Drawing.Color.White
         Me.TextBoxValidate3.Name = "TextBoxValidate3"
@@ -226,11 +242,11 @@ Partial Class Form1
         'TextBoxValidate10
         '
         Me.TextBoxValidate10.GotFocusColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.TextBoxValidate10.Location = New System.Drawing.Point(390, 279)
+        Me.TextBoxValidate10.Location = New System.Drawing.Point(390, 243)
         Me.TextBoxValidate10.LostFocusColor = System.Drawing.Color.White
         Me.TextBoxValidate10.Name = "TextBoxValidate10"
         Me.TextBoxValidate10.Size = New System.Drawing.Size(321, 20)
-        Me.TextBoxValidate10.TabIndex = 8
+        Me.TextBoxValidate10.TabIndex = 9
         Me.TextBoxValidate10.TextoVazioColor = System.Drawing.Color.Gray
         Me.TextBoxValidate10.TextoVazioDescricao = "e-mail"
         Me.TextBoxValidate10.TipoValidacao = "E-Mail"
@@ -238,7 +254,7 @@ Partial Class Form1
         'TextBoxValidate9
         '
         Me.TextBoxValidate9.GotFocusColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.TextBoxValidate9.Location = New System.Drawing.Point(206, 279)
+        Me.TextBoxValidate9.Location = New System.Drawing.Point(206, 243)
         Me.TextBoxValidate9.LostFocusColor = System.Drawing.Color.White
         Me.TextBoxValidate9.Name = "TextBoxValidate9"
         Me.TextBoxValidate9.Size = New System.Drawing.Size(141, 20)
@@ -249,7 +265,7 @@ Partial Class Form1
         '
         'TextBoxValidate2
         '
-        Me.TextBoxValidate2.GotFocusColor = System.Drawing.Color.White
+        Me.TextBoxValidate2.GotFocusColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.TextBoxValidate2.Location = New System.Drawing.Point(211, 99)
         Me.TextBoxValidate2.LostFocusColor = System.Drawing.Color.White
         Me.TextBoxValidate2.Name = "TextBoxValidate2"
@@ -262,7 +278,7 @@ Partial Class Form1
         'TextBoxValidate8
         '
         Me.TextBoxValidate8.GotFocusColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.TextBoxValidate8.Location = New System.Drawing.Point(55, 279)
+        Me.TextBoxValidate8.Location = New System.Drawing.Point(55, 243)
         Me.TextBoxValidate8.LostFocusColor = System.Drawing.Color.White
         Me.TextBoxValidate8.Name = "TextBoxValidate8"
         Me.TextBoxValidate8.Size = New System.Drawing.Size(141, 20)
@@ -274,7 +290,7 @@ Partial Class Form1
         'TextBoxValidate7
         '
         Me.TextBoxValidate7.GotFocusColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.TextBoxValidate7.Location = New System.Drawing.Point(390, 184)
+        Me.TextBoxValidate7.Location = New System.Drawing.Point(390, 163)
         Me.TextBoxValidate7.LostFocusColor = System.Drawing.Color.White
         Me.TextBoxValidate7.Name = "TextBoxValidate7"
         Me.TextBoxValidate7.Size = New System.Drawing.Size(141, 20)
@@ -286,7 +302,7 @@ Partial Class Form1
         'TextBoxValidate6
         '
         Me.TextBoxValidate6.GotFocusColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.TextBoxValidate6.Location = New System.Drawing.Point(211, 184)
+        Me.TextBoxValidate6.Location = New System.Drawing.Point(211, 163)
         Me.TextBoxValidate6.LostFocusColor = System.Drawing.Color.White
         Me.TextBoxValidate6.Name = "TextBoxValidate6"
         Me.TextBoxValidate6.Size = New System.Drawing.Size(141, 20)
@@ -298,7 +314,7 @@ Partial Class Form1
         'TextBoxValidate5
         '
         Me.TextBoxValidate5.GotFocusColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.TextBoxValidate5.Location = New System.Drawing.Point(55, 184)
+        Me.TextBoxValidate5.Location = New System.Drawing.Point(55, 163)
         Me.TextBoxValidate5.LostFocusColor = System.Drawing.Color.White
         Me.TextBoxValidate5.Name = "TextBoxValidate5"
         Me.TextBoxValidate5.Size = New System.Drawing.Size(94, 20)
@@ -310,6 +326,7 @@ Partial Class Form1
         '
         'TextBoxValidate1
         '
+        Me.TextBoxValidate1.AcceptsReturn = True
         Me.TextBoxValidate1.GotFocusColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.TextBoxValidate1.Location = New System.Drawing.Point(55, 99)
         Me.TextBoxValidate1.LostFocusColor = System.Drawing.Color.White
@@ -322,21 +339,67 @@ Partial Class Form1
         Me.TextBoxValidate1.TextoVazioDescricao = "Valor Pago"
         Me.TextBoxValidate1.TipoValidacao = "Moeda"
         '
-        'Label11
+        'Panel3
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(349, 4)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(87, 24)
-        Me.Label11.TabIndex = 3
-        Me.Label11.Text = "Créditos"
+        Me.Panel3.Controls.Add(Me.Label13)
+        Me.Panel3.Controls.Add(Me.TextBoxValidate11)
+        Me.Panel3.Location = New System.Drawing.Point(58, 291)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(653, 71)
+        Me.Panel3.TabIndex = 10
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(164, 12)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(67, 24)
+        Me.Label13.TabIndex = 10
+        Me.Label13.Text = "e-Mail"
+        Me.Label13.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'TextBoxValidate11
+        '
+        Me.TextBoxValidate11.GotFocusColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TextBoxValidate11.Location = New System.Drawing.Point(168, 39)
+        Me.TextBoxValidate11.LostFocusColor = System.Drawing.Color.White
+        Me.TextBoxValidate11.Name = "TextBoxValidate11"
+        Me.TextBoxValidate11.Size = New System.Drawing.Size(321, 20)
+        Me.TextBoxValidate11.TabIndex = 0
+        Me.TextBoxValidate11.TextoVazioColor = System.Drawing.Color.Gray
+        Me.TextBoxValidate11.TextoVazioDescricao = "e-mail"
+        Me.TextBoxValidate11.TipoValidacao = "E-Mail"
+        '
+        'TextBoxValidate12
+        '
+        Me.TextBoxValidate12.GotFocusColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(224, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.TextBoxValidate12.Location = New System.Drawing.Point(570, 163)
+        Me.TextBoxValidate12.LostFocusColor = System.Drawing.Color.White
+        Me.TextBoxValidate12.Name = "TextBoxValidate12"
+        Me.TextBoxValidate12.Size = New System.Drawing.Size(141, 20)
+        Me.TextBoxValidate12.TabIndex = 6
+        Me.TextBoxValidate12.TextoVazioColor = System.Drawing.Color.Gray
+        Me.TextBoxValidate12.TextoVazioDescricao = "Hora"
+        Me.TextBoxValidate12.TipoValidacao = "Hora"
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label14.Location = New System.Drawing.Point(566, 136)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(55, 24)
+        Me.Label14.TabIndex = 0
+        Me.Label14.Text = "Hora"
+        Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 439)
+        Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -344,6 +407,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
+        Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label5)
@@ -355,6 +419,7 @@ Partial Class Form1
         Me.Controls.Add(Me.TextBoxValidate9)
         Me.Controls.Add(Me.TextBoxValidate2)
         Me.Controls.Add(Me.TextBoxValidate8)
+        Me.Controls.Add(Me.TextBoxValidate12)
         Me.Controls.Add(Me.TextBoxValidate7)
         Me.Controls.Add(Me.TextBoxValidate6)
         Me.Controls.Add(Me.TextBoxValidate5)
@@ -365,6 +430,8 @@ Partial Class Form1
         Me.Panel1.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.Panel3.ResumeLayout(False)
+        Me.Panel3.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -395,4 +462,9 @@ Partial Class Form1
     Friend WithEvents Panel2 As Panel
     Friend WithEvents LinkLabel1 As LinkLabel
     Friend WithEvents Label11 As Label
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Label13 As Label
+    Friend WithEvents TextBoxValidate11 As TextBoxValidate
+    Friend WithEvents TextBoxValidate12 As TextBoxValidate
+    Friend WithEvents Label14 As Label
 End Class
