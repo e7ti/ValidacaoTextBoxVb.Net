@@ -6,6 +6,8 @@ Classe VB.NET
 - . . CEP
 - . . CPF
 - . . CNPJ
+- . . Data
+- . . Hora
 - . . Numerico - Só números
 - . . Moeda - somente números e na forma de valor bancário
 - . . Telelefone
